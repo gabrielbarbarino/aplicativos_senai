@@ -1,0 +1,56 @@
+*  {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #c00f13;
+    font-family: Arial, sans-serif;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+}
+
+#sobre-o-jogo, #video {
+    margin: 15px;
+    
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 
+    -1px -1px 0px rgb(255, 255, 255),  /* Sombra superior esquerda */
+    1px -1px 0px rgb(255, 255, 255),   /* Sombra superior direita */
+    -1px 1px 0px rgb(255, 255, 255),   /* Sombra inferior esquerda */
+    1px 1px 0px rgb(255, 255, 255);    /* Sombra inferior direita */
+}
+
+p {
+    text-align: justify;
+    color: black;
+   
+}
+
+#fotos img{
+    margin-left: 25px;
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid black;
+}
