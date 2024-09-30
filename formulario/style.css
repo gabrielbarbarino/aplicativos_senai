@@ -1,0 +1,42 @@
+body {
+    height: 90vh;
+    background: url('img/escola.png');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.central {
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 2px 2px 1px 1px black;
+}
+
+.central input {
+    height: 20px;
+    background-color: silver;
+    border: none;
+    border-radius: 10px;
+}
+
+.central input:focus{
+    background-color: cyan;
+}
+
+.central button{
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
