@@ -1,0 +1,32 @@
+body {
+    background: black;
+    height: 100hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central {
+    margin-top: 150px;
+    background: white;
+    width: 300px;
+    width: fit-content;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+img {
+    margin-bottom: 30px;
+    margin-left: 45px;
+}
+
+.central button {
+    width: 90px;
+    cursor: pointer;
+    background: cyan;
+}
+
+
+#acesa {
+    margin-right: 10px;
+}
