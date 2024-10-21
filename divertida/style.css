@@ -1,0 +1,35 @@
+body {
+    background: darkblue;
+    height: 100hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.central {
+    margin-top: 150px;
+    width: fit-content;
+    background: white;
+    padding: 20px;
+    border-radius: 20px; 
+}
+
+.central button {
+    width: 80px;
+    background: cyan;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.central button:hover {
+    background: pink;
+    transform: translateY(-4px);
+}
