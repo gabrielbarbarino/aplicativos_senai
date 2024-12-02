@@ -1,0 +1,31 @@
+body {
+    height: 100hv;
+    overflow: hidden;
+    background: url('/img/cena.jpg');
+    background-size: cover;
+}
+
+.sonic{
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 490px;
+    animation: movimento 1s infinite;
+}
+
+@keyframes movimento {
+    0%{
+        left: 0;
+        top: 490;
+      /*  scale: 100%;
+        opacity: 100%; */
+    }
+
+
+    100%{
+        left: 1370px;
+        top: 440px;
+      /*  scale: 200%;
+        opacity: 50%; */
+    }
+}
