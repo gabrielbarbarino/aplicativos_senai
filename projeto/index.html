@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Teste</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h2>Formulário de Teste da Aplicação</h2>
+
+<!-- Formulário para Usuário -->
+<h3>Adicionar Usuário</h3>
+<form id="userForm">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+    <input type="date" name="data_de_nascimento" placeholder="Data de Nascimento" required>
+    <input type="text" name="telefone" placeholder="Telefone">
+    <input type="text" name="CEP" placeholder="CEP">
+    <input type="text" name="referencia" placeholder="Referência">
+    <input type="number" name="numero" placeholder="Número">
+    <button type="submit">Salvar Usuário</button>
+</form>
+
+<!-- Formulário para Administração -->
+<h3>Adicionar Administração</h3>
+<form id="adminForm">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+    <button type="submit">Salvar Administração</button>
+</form>
+
+<!-- Formulário para Tipo de Acessibilidade -->
+<h3>Adicionar Tipo de Acessibilidade</h3>
+<form id="tipoAcessibilidadeForm">
+    <input type="text" name="descricao" placeholder="Descrição" required>
+    <input type="text" name="diretrizes" placeholder="Diretrizes">
+    <button type="submit">Salvar Tipo de Acessibilidade</button>
+</form>
+
+<!-- Formulário para Informação de Acessibilidade -->
+<h3>Adicionar Informação de Acessibilidade</h3>
+<form id="infoAcessibilidadeForm">
+    <input type="text" name="descricao" placeholder="Descrição" required>
+    <input type="text" name="estatus" placeholder="Status" required>
+    <input type="date" name="data_da_ultima_atualizacao" placeholder="Data da Última Atualização" required>
+    <input type="number" name="fk_estabelecimento_local_id" placeholder="ID do Estabelecimento" required>
+    <button type="submit">Salvar Informação de Acessibilidade</button>
+</form>
+
+<!-- Formulário para Avaliação -->
+<h3>Adicionar Avaliação</h3>
+<form id="feedbackForm">
+    <input type="number" name="nota" placeholder="Nota (1-5)" required min="1" max="5">
+    <textarea name="comentario" placeholder="Comentário"></textarea>
+    <input type="date" name="data_da_avaliacao" placeholder="Data da Avaliação" required>
+    <input type="text" name="tipo_de_feedback" placeholder="Tipo de Feedback">
+    <input type="number" name="fk_estabelecimento_local_id" placeholder="ID do Estabelecimento" required>
+    <input type="number" name="fk_usuario_id" placeholder="ID do Usuário" required>
+    <button type="submit">Salvar Avaliação</button>
+</form>
+
+<!-- Formulário para Estabelecimento Local -->
+<h3>Adicionar Estabelecimento Local</h3>
+<form id="estabelecimentoForm">
+    <input type="text" name="nome_do_estabelecimento" placeholder="Nome do Estabelecimento" required>
+    <input type="text" name="tipo_de_local" placeholder="Tipo de Local" required>
+    <input type="text" name="referencia" placeholder="Referência">
+    <input type="number" name="numero" placeholder="Número">
+    <input type="text" name="CEP" placeholder="CEP">
+    <textarea name="descricao" placeholder="Descrição"></textarea>
+    <input type="datetime-local" name="horario_de_funcionamento" placeholder="Horário de Funcionamento" required>
+    <input type="number" name="latitude" placeholder="Latitude" required>
+    <input type="number" name="longitude" placeholder="Longitude" required>
+    <input type="date" name="data_de_inclusao" placeholder="Data de Inclusão">
+    <input type="number" name="nota" placeholder="Nota (0-5)" step="0.1">
+    <input type="number" name="fotos" placeholder="Número de Fotos">
+    <input type="checkbox" name="verificado_pela_administracao"> Verificado pela Administração
+    <input type="text" name="nome_do_responsavel" placeholder="Nome do Responsável">
+    <input type="email" name="email_do_estabelecimento" placeholder="Email do Estabelecimento">
+    <input type="text" name="telefone_do_estabelecimento" placeholder="Telefone do Estabelecimento">
+    <input type="text" name="tipo_de_estabelecimento" placeholder="Tipo de Estabelecimento">
+    <input type="date" name="data_de_registro" placeholder="Data de Registro">
+    <input type="number" name="fk_administracao_id" placeholder="ID da Administração" required>
+    <button type="submit">Salvar Estabelecimento Local</button>
+</form>
+
+<!-- Formulário para Possuir Acessibilidade -->
+<h3>Adicionar Acessibilidade a Usuário</h3>
+<form id="possuiForm">
+    <input type="number" name="fk_tipo_de_acessibilidade_id" placeholder="ID do Tipo de Acessibilidade" required>
+    <input type="number" name="fk_usuario_id" placeholder="ID do Usuário" required>
+    <button type="submit">Salvar Acessibilidade</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
